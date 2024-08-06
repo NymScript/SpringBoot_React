@@ -25,14 +25,16 @@ public class Ahorcado {
         System.out.print(letrasAdivinadas[i]);
     }
 
-    // Bucle principal del juego
+    //* */ Bucle principal del juego
     while (!palabraAdivinada && intentos < intentosMaximos) {
+        //Esto se usa cuando tenemos una palabra de chars
 
-        System.out.println("Palabra a adivinar: "+ String.valueOf(letrasAdivinadas));
+        System.out.println("Palabra a adivinar: "+ String.valueOf(letrasAdivinadas)+ "("+ palabraSecreta.length() + " letras)");
 
         System.out.print("Introduce una letra, por favor: ");
         //Si pone muchas letras solo va a tomar la primera letra
-        char letra = scanner.next().charAt(0);
+        //si entra letra en mayuscula la convierte en minuscula
+        char letra = Character.toLowerCase(scanner.next().charAt(0));
         
         boolean letraCorrecta = false; // Bandera para saber si la letra está en la palabra
 
