@@ -1,15 +1,19 @@
 public class App {
     public static void main(String[] args) throws Exception {
-    //Estructura de control (Bucle flor)
+    //Estructura de control (bucle while)
 
-    //for(inicializacion; condicion; actualización)
-        for( int i = 1; i <=10; i++){
-            System.out.println("El valor en que emrino i es: ");
-            System.out.println(i);
-        
-        }
+    int contador = 1;
+
+    while (contador <= 5) {
+        System.out.println(contador);
+
+        //Actualización de la variable,si no ponemos esto sera un bucle infinito hasta que se coma toda la RAM
+        contador++;
     }
 
+    System.out.println(contador);
+                  
+    }
 }
 
 //ALt + Shit + F
