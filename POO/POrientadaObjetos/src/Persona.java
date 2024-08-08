@@ -5,11 +5,12 @@ public class Persona {
     String nombre;
     String apellido;
     int edad;
+    Carrera carrera;
 
     //* Metodos (comportamiento de un objeto)
 
     public String darNombreCompleto(){
-        return apellido + " , " + nombre;
+        return nombre + " " + apellido;
     }
 
     public String enviarSaludo(String saludado){
