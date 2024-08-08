@@ -4,8 +4,9 @@ public class Carrera {
     int duracion;
     boolean estaEnCurso;
 
-    public static void main(String[] args) {
-        
+    public Carrera (String nombre, int duracion, boolean estaEnCurso){
+
     }
 
+ 
 }
