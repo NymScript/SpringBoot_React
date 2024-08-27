@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class actividadSwitch {
+public class switchActividad {
 
      public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
